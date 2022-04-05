@@ -1,0 +1,83 @@
+.LoginClass .Loginner, .LoginClass select {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: white;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+    margin-bottom: 1.5rem;
+}
+.LoginClass label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+.LoginPage
+{
+    background-color: #befce8;
+    box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 8%);
+    border-radius: 2rem;
+    transition: all 0.4s;
+    overflow: hidden;
+    width: 50rem;
+    margin: 15rem auto;
+}
+.LoginPage:hover{
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgb(0 0 0 / 0.06);
+}
+.Login {
+    padding: 4.8rem 2.4rem 6.4rem 2.4rem;
+    margin-left: 5rem;
+    color: #03251a;
+    width: 40rem;
+}
+.Login h3{
+        text-align: center;
+}
+.Loginbutton
+{
+    font-size: 2rem;
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+    font-weight: 600;
+    background-color: #fff;
+    color: #10b981;
+    border: 2px solid #10b981;
+    margin-left: 3rem;
+}
+.Registerbutton
+{
+    font-size: 2rem;
+    padding: 1.8rem 3.2rem;
+    border-radius: 9px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+    font-weight: 600;
+    background-color: #10b981;
+    border: none;
+    margin-left: 3rem;
+}
+.register-link:link.register-link:visited
+{
+    text-decoration: none;
+     color: #fff;
+}
+.register-link:active,.register-link:hover
+{
+    text-decoration: none;
+    color: #fff;
+    background-color: #0ea774;
+}
+.register-link
+{
+    color: #fff;
+}

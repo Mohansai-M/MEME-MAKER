@@ -1,0 +1,231 @@
+.logo
+{
+    height: 5rem;
+}
+
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2fcf9;
+    height: 9.6rem;
+    align-items: center;
+    padding: 0 4.8rem;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+}
+.mainnavlist
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+.mainnavlink
+{
+    transition: all 0.3s;
+}
+.mainnavlink:link,
+.mainnavlink:visited
+{
+display: inline-block;
+text-decoration: none;
+color: #333;
+font-size: 1.8rem;
+font-weight: 500;
+}
+.mainnavlink:hover,.mainnavlink:active
+{
+    color: #0ea774;
+    background-color: transparent;
+}
+
+.mainnavlink.nav-cta:link,
+.mainnavlink.nav-cta:visited
+{
+    border-radius: 9px;
+    padding: 1.2rem 2.4rem;
+    color: #fff;
+    background-color: #10b981;
+}
+.mainnavlink.nav-cta:hover,
+.mainnavlink.nav-cta:active
+{
+    background-color: #0ea774;
+}
+.mainnavbutton
+{
+    background-color: transparent;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: 500;
+    border: none;
+}
+.mainnavbutton:hover,.mainnavbutton:active
+{
+    color: #0ea774;
+}
+.mainnavlinkdrop
+{
+    background-color: transparent;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: 500;
+    border: none;
+    width: 15rem;
+    padding: 2rem 2rem;
+}
+.mainnavlinkdrop:hover,.mainnavlinkdrop:active
+{
+    color: #cf711f;
+    background-color:none;
+}
+.mainnavdroplist
+{
+    background-color: #fdf2e9;
+    border: none;
+    box-shadow: 6px 10px 16px 7px rgba(0,0,0,0.22);
+    border-radius: 1rem;
+}
+.dropdown-toggle::after
+{
+content: none;
+}
+
+.menu-btn
+{
+    display:none;
+    color: #cf711f;
+}
+#click
+{
+display: none;
+}
+ion-icon {
+ display: none;
+}
+
+@media (max-width: 84em)
+{
+.menu-btn icon-icon
+{
+    display:none;
+    color: #cf711f;
+}
+.logo
+{
+    height: 3.5rem;
+}
+.mainnavlist
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.mainnavlink:link,
+.mainnavlink:visited,
+.mainnavbutton,.mainnavdroplist
+{
+font-size: 1.6rem;
+font-weight: 500;
+}
+.mainnavlink.nav-cta:link,
+.mainnavlink.nav-cta:visited
+{
+    border-radius: 9px;
+    padding: 1.2rem 2rem;
+}
+.mainnavlinkdrop
+{
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: none;
+    width: 12rem;
+    padding: 2rem 2rem;
+}
+}
+@media(max-width: 710px)
+{
+.mainnavlist li
+{
+    margin: 7rem 0;
+}
+.mainnavlink:hover
+{
+    color: #fdf2e9;
+}
+
+.nav-cta
+{
+padding: none;
+}
+.mainnavlink.nav-cta:hover,.mainnavlink.nav-cta:active{
+    background-color: #fdf2e9;
+    color: #cf711f;
+    transition: all 0.3s ease;
+}
+.mainnavlink:link, .mainnavlink:visited, .mainnavbutton {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+#click
+{
+    display: none;
+}
+ion-icon {
+  font-size: 35px;
+  cursor: pointer;
+}
+.hydrated
+{
+    color: #cf711f;
+}
+.menu-btn ion-icon
+{
+    display: block;
+    color: #cf711f;
+}
+.menu-btn
+{
+    margin-left: 30rem;
+}
+.mainnavlist
+{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background-color:#e67e22;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: all 0.3 ease;
+}
+ #click:checked ~ .mainnavlist
+    {
+        left: 0%;
+    }
+#click:checked ~ .menu-btn ion-icon::before
+{
+    content: "X";
+}
+
+#click
+    {display: none;}
+
+}
+
+@media (max-width: 75em) {
+      .header {
+    padding: 0 3.2rem;
+  }
+  
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+}
